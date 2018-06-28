@@ -476,10 +476,6 @@ public class MyFrame extends JFrame{
     public class CustomListener implements MouseListener {
         public void mouseClicked(MouseEvent e) {
             JButton button = (JButton) e.getSource();
-            /*String text = "<html><b>" + button.getText()
-                     + " mouseReleased() <br>" + button.getText()
-                     + " mouseClicked() </b><html>";
-            eventLabel.setText(text);*/
         }
         public void mouseEntered(MouseEvent e) {
             JButton button = (JButton) e.getSource();
@@ -491,12 +487,10 @@ public class MyFrame extends JFrame{
         }
         public void mousePressed(MouseEvent e) {
             JButton button = (JButton) e.getSource();
-            //eventLabel.setText(button.getText() + " mousePressed()");
         }
 
         public void mouseReleased(MouseEvent e) {
             JButton button = (JButton) e.getSource();
-            //eventLabel.setText(button.getText() + " mouseReleased()");
         }
     }
 }
